@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logger"
+    tools:context=".log">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569">
+
+
+        <EditText
+            android:id="@+id/emaillog"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:backgroundTint="#0B58D7"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:ems="10"
+            android:hint=" Your email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#0B58D7"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passlog"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+
+            android:backgroundTint="#0B58D7"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:ems="10"
+            android:hint=" Your password"
+            android:inputType="numberPassword"
+            android:textColorHint="#0B58D7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="112dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#0B58D7"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FAF2F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <Button
+        android:id="@+id/dont"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="342dp"
+        android:layout_height="81dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Don't have any accaunt? Sign up"
+        android:textAllCaps="false"
+        android:textColor="#0B58D7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

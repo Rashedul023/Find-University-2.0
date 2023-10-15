@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profileId"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile"
+        app:showAsAction="never"
+
+        ></item>
+
+
+    <item
+        android:id="@+id/changeId"
+        android:title="Change Profile"
+        android:icon="@drawable/baseline_settings_24"
+        android:drawableLeft="@drawable/baseline_settings_24"
+        app:showAsAction="never"
+
+        ></item>
+    <item
+        android:id="@+id/profileId2"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile"
+        app:showAsAction="always"
+
+        ></item>
+
+
+    <item
+        android:id="@+id/changeId2"
+        android:title="Change Profile"
+        android:icon="@drawable/baseline_settings_24"
+        android:drawableLeft="@drawable/baseline_settings_24"
+        app:showAsAction="always"
+
+        ></item>
+
+
+</menu>

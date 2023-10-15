@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Find University"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Find_University"
+        tools:targetApi="31">
+        <activity
+            android:name=".FavouriteList"
+            android:label="Favourite List"
+            android:exported="false" />
+        <activity
+            android:name=".Combine"
+            android:exported="false" />
+        <activity
+            android:name=".AddUniversity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Check"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false"
+            android:label="Profile Update"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".According"
+            android:exported="false"
+            android:label="Suggested University"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".profile"
+            android:exported="false"
+            android:label="User&apos;s Profile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Subject"
+            android:exported="false"
+            android:label="Filter By Subject"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".log"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".signup"
+            android:exported="false"
+            android:label="SignUp Activity"
+            android:parentActivityName=".log" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Find University" />
+        <activity
+            android:name=".Filter_Activity"
+            android:exported="false"
+            android:label="Filter University"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="Search"
+            android:parentActivityName=".FavouriteList" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="Find University">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

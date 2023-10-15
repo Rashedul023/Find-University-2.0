@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackback"
+    android:padding="6dp"
+    tools:context=".Combine">
+
+    <EditText
+        android:id="@+id/countryFilter"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:textColor="#F8F3F3"
+        android:textColorHint="#DFD0D0"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ieltsFilter"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countryFilter"
+        android:layout_marginTop="6dp"
+        android:hint="IELTS Score"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#E4DEDE"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/cgpaFilter"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ieltsFilter"
+        android:layout_marginTop="6dp"
+        android:hint="CGPA"
+        android:textColor="#F1EAEA"
+        android:textColorHint="#ECE1E1"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/tuitionFeeFilter"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cgpaFilter"
+        android:layout_marginTop="6dp"
+        android:hint="Tuition Fee"
+
+        android:textColor="#F8F4F4"
+        android:textColorHint="#DCD2D2"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonApplyFilters"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tuitionFeeFilter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F60909"
+        android:text="Apply Filters"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonApplyFilters"
+        android:layout_marginTop="6dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/countryFilter"
+        android:backgroundTint="#FAF6F6"
+        android:buttonTint="#F8EEEE"
+        android:textColor="#FAF6F6" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryFilter"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ieltsFilter"
+        android:buttonTint="#F8F3F3" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ieltsFilter"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/cgpaFilter"
+        android:buttonTint="#F3EEEE" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cgpaFilter"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tuitionFeeFilter"
+        android:buttonTint="#EFECEC" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackback"
+    android:padding="16dp">
+
+    <!-- Add EditText fields for updating user information -->
+    <TextView
+        android:id="@+id/updateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Update Information"
+        android:layout_marginTop="46dp"
+        android:textColor="#ECEDF4"
+        android:textSize="30sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateMajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Major">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/majorEditText"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateCGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateMajor"
+        android:layout_marginTop="16dp"
+        android:hint="CGPA">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cgpaEditText"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateIELTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateCGPA"
+        android:layout_marginTop="16dp"
+        android:hint="IELTS">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ieltsEditText"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateIELTS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:backgroundTint="#F81A1A"
+        android:text="Update" />
+
+</RelativeLayout>
